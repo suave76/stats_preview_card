@@ -33,8 +33,8 @@ Design was in image format. So had to make certain judgements on my own.
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/suave76/stats_preview_card)
+- Live Site URL: (https://suave76.github.io/stats_preview_card/)
 
 ## My process
 
