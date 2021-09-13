@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(233, 47%, 7%);
+  padding: 8rem 12rem;
+  font-size: 0.9375rem;
+  min-width: 311.562px;
+  max-width: 1037.12px;
+}
+
+.flex_container {
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+/* ----------- TEXT CONTAINER-------------- */
+.text_container {
+  box-sizing: border-box;
+  padding: 4rem 5rem 4rem 4rem;
+  flex-basis: 58%;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+.highlight {
+  color: hsl(277, 64%, 61%); /*-----accent color for "INSIGHTS"-----*/
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  margin: 1.5625rem 0 5rem 0;
+  line-height: 1.5;
+  padding-right: 2rem;
+}
+
+/* ----------- STATS SECTION-------------- */
+.stats {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0 4rem 0 0;
+}
+
+li {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.stat_heading {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+}
+
+/* ----------- IMAGE CONTAINER-------------- */
+.image_container {
+  background-color: hsl(277, 64%, 61%);
+}
+
+img {
+  display: block;
+  mix-blend-mode: multiply;
+  opacity: 0.7;
+  min-height: 100%;
+}
+
+.mobile_img {
+  display: none;
+}
+
+/* ----------- ATTRIBUTION SECTION-------------- */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-top: 15px;
+}
+.attribution a {
+  color: hsla(0, 0%, 100%, 0.75);
+  text-decoration: none;
+}
+
+/* **************** VERTICAL FLEX IMAGE ******************/
+
+@media (max-width: 1349px) {
+  body {
+    padding: 5rem 26%;
+    text-align: center;
+  }
+  .flex_container {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  /* ----------- TEXT CONTAINER-------------- */
+  .text_container {
+    padding: 3rem 2rem;
+  }
+  p {
+    padding: 0 4rem;
+    margin-bottom: 5rem;
+  }
+
+  /* ----------- STATS SECTION-------------- */
+  .stats {
+    padding: 0 1rem;
+    justify-content: space-around;
+    /* flex-direction: column; */
+  }
+
+  /* ----------- IMAGE CONTAINER-------------- */
+  .mobile_img {
+    display: block;
+  }
+  .desktop_img {
+    display: none;
+  }
+}
+
+/* **************** VERTICAL FLEX STATS ******************/
+@media (max-width: 1125px) {
+  body {
+    padding: 5rem 28%;
+  }
+  .text_container {
+    padding: 3rem 1.5rem;
+  }
+  h1 {
+    font-size: 1.7rem;
+  }
+  p {
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+  .stats {
+    padding: 0;
+    flex-direction: column;
+  }
+
+  li {
+    margin: 1.2rem 0;
+    font-size: 1rem;
+  }
+}
+
+/***************** FINAL 375PX WIDTH ******************/
+@media (max-width: 625px) {
+  body {
+    padding: 5rem 0;
+    position: relative;
+  }
+  .flex_container {
+    width: 311.562px;
+    margin: auto;
+  }
+}
